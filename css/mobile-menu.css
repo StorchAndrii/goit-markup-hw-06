@@ -1,0 +1,119 @@
+html:has(.mobile-menu.is-open) {
+  overflow: hidden;
+}
+
+.mobile-menu {
+  position: fixed;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: #fff;
+  color: #2e2f42;
+  overflow-y: auto;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-menu-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+  min-height: 100%;
+  padding: 72px 16px 40px;
+}
+
+.mobile-menu-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  fill: currentColor;
+}
+
+.mobile-menu-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobile-menu-link {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+}
+
+.mobile-menu-link-active,
+.mobile-menu a:hover,
+.mobile-menu a:focus-visible {
+  color: #404bbf;
+}
+
+.mobile-menu-address {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+.mobile-menu-phone {
+  color: #4d5ae5;
+}
+
+.mobile-menu-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 48px;
+}
+
+.mobile-menu-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+  fill: currentColor;
+}
+
+.mobile-menu-social-link:hover,
+.mobile-menu-social-link:focus-visible {
+  background-color: #404bbf;
+}
+
+.mobile-menu .mobile-menu-social-link:hover,
+.mobile-menu .mobile-menu-social-link:focus-visible {
+  color: #f4f4fd;
+}

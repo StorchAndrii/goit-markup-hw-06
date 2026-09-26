@@ -25,6 +25,18 @@
         <a href="./index.html" class="logo header-logo"
           ><span class="logo-web">WEB</span>STUDIO</a
         >
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          aria-haspopup="dialog"
+        >
+          <svg width="24" height="24" aria-hidden="true">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
         <nav class="header-nav">
           <ul class="header-nav-list">
             <li class="header-nav-item">
@@ -56,6 +68,7 @@
         </address>
       </div>
     </header>
+
     <main>
       <section id="hero" class="hero-section">
         <div class="container hero-container">
@@ -127,7 +140,9 @@
             <li class="team-item">
               <img
                 class="team-item-image"
-                src="./images/team-1.jpg"
+                src="./images/team-1.png"
+                srcset="./images/team-1.png 1x, ./images/team-1@2x.png 2x"
+                height="260"
                 width="264"
                 alt="Portrait of Mark Guerrero"
               />
@@ -213,7 +228,9 @@
             <li class="team-item">
               <img
                 class="team-item-image"
-                src="./images/team-2.jpg"
+                src="./images/team-2.png"
+                srcset="./images/team-2.png 1x, ./images/team-2@2x.png 2x"
+                height="260"
                 width="264"
                 alt="Portrait of Tom Ford"
               />
@@ -299,7 +316,9 @@
             <li class="team-item">
               <img
                 class="team-item-image"
-                src="./images/team-3.jpg"
+                src="./images/team-3.png"
+                srcset="./images/team-3.png 1x, ./images/team-3@2x.png 2x"
+                height="260"
                 width="264"
                 alt="Portrait of Camila Garcia"
               />
@@ -385,7 +404,9 @@
             <li class="team-item">
               <img
                 class="team-item-image"
-                src="./images/team-4.jpg"
+                src="./images/team-4.png"
+                srcset="./images/team-4.png 1x, ./images/team-4@2x.png 2x"
+                height="260"
                 width="264"
                 alt="Portrait of Daniel Wilson"
               />
@@ -476,11 +497,16 @@
         <div class="container portfolio-container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-item-thumb">
                 <img
                   class="portfolio-item-image"
                   src="./images/portfolio-1.jpg"
+                  srcset="
+                    ./images/portfolio-1.jpg    1x,
+                    ./images/portfolio-1@2x.jpg 2x
+                  "
+                  height="300"
                   width="360"
                   alt="Banking app interface"
                 />
@@ -495,11 +521,16 @@
                 <p class="portfolio-item-text">App</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-item-thumb">
                 <img
                   class="portfolio-item-image"
                   src="./images/portfolio-2.jpg"
+                  srcset="
+                    ./images/portfolio-2.jpg    1x,
+                    ./images/portfolio-2@2x.jpg 2x
+                  "
+                  height="300"
                   width="360"
                   alt="Cashless payment interface"
                 />
@@ -514,11 +545,16 @@
                 <p class="portfolio-item-text">Marketing</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-item-thumb">
                 <img
                   class="portfolio-item-image"
                   src="./images/portfolio-3.jpg"
+                  srcset="
+                    ./images/portfolio-3.jpg    1x,
+                    ./images/portfolio-3@2x.jpg 2x
+                  "
+                  height="300"
                   width="360"
                   alt="Meditation app interface"
                 />
@@ -533,11 +569,16 @@
                 <p class="portfolio-item-text">App</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-item-thumb">
                 <img
                   class="portfolio-item-image"
                   src="./images/portfolio-4.jpg"
+                  srcset="
+                    ./images/portfolio-4.jpg    1x,
+                    ./images/portfolio-4@2x.jpg 2x
+                  "
+                  height="300"
                   width="360"
                   alt="Taxi service interface"
                 />
@@ -552,11 +593,16 @@
                 <p class="portfolio-item-text">Marketing</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-item-thumb">
                 <img
                   class="portfolio-item-image"
                   src="./images/portfolio-5.jpg"
+                  srcset="
+                    ./images/portfolio-5.jpg    1x,
+                    ./images/portfolio-5@2x.jpg 2x
+                  "
+                  height="300"
                   width="360"
                   alt="Screen illustrations"
                 />
@@ -571,11 +617,16 @@
                 <p class="portfolio-item-text">Design</p>
               </div>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-item" tabindex="0">
               <div class="portfolio-item-thumb">
                 <img
                   class="portfolio-item-image"
                   src="./images/portfolio-6.jpg"
+                  srcset="
+                    ./images/portfolio-6.jpg    1x,
+                    ./images/portfolio-6@2x.jpg 2x
+                  "
+                  height="300"
                   width="360"
                   alt="Online courses interface"
                 />
@@ -611,7 +662,7 @@
             <li class="footer-socials-item">
               <a
                 class="footer-socials-link"
-                href="./images/"
+                href="https://www.instagram.com/"
                 aria-label="Instagram"
               >
                 <svg
@@ -627,7 +678,7 @@
             <li class="footer-socials-item">
               <a
                 class="footer-socials-link"
-                href="./images/"
+                href="https://www.twitter.com/"
                 aria-label="Twitter"
               >
                 <svg
@@ -643,7 +694,7 @@
             <li class="footer-socials-item">
               <a
                 class="footer-socials-link"
-                href="./images/"
+                href="https://www.facebook.com/"
                 aria-label="Facebook"
               >
                 <svg
@@ -659,7 +710,7 @@
             <li class="footer-socials-item">
               <a
                 class="footer-socials-link"
-                href="./images/"
+                href="https://www.linkedin.com/"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -703,6 +754,101 @@
         </div>
       </div>
     </footer>
+    <div
+      class="mobile-menu"
+      id="mobile-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Navigation menu"
+    >
+      <div class="mobile-menu-content">
+        <button
+          class="mobile-menu-close"
+          type="button"
+          aria-label="Close navigation menu"
+        >
+          <svg width="8" height="8" aria-hidden="true">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav aria-label="Mobile navigation">
+          <ul class="mobile-menu-nav">
+            <li>
+              <a
+                class="mobile-menu-link mobile-menu-link-active"
+                href="#features"
+                >Features</a
+              >
+            </li>
+            <li><a class="mobile-menu-link" href="#team">Team</a></li>
+            <li><a class="mobile-menu-link" href="#portfolio">Portfolio</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-bottom">
+          <address class="mobile-menu-address">
+            <a class="mobile-menu-phone" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </address>
+          <ul class="mobile-menu-socials">
+            <li>
+              <a
+                class="mobile-menu-social-link"
+                href="https://www.instagram.com/"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="mobile-menu-social-link"
+                href="https://www.twitter.com/"
+                aria-label="Twitter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="mobile-menu-social-link"
+                href="https://www.facebook.com/"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="mobile-menu-social-link"
+                href="https://www.linkedin.com/"
+                aria-label="Linkedin"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg width="24" height="24" aria-hidden="true">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div id="modal" class="backdrop">
       <div
         class="modal"

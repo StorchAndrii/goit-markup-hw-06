@@ -1,5 +1,5 @@
 .header-section {
-  border-bottom: 1px solid #e7e9fc;
+  box-shadow: inset 0 -1px #e7e9fc;
 }
 
 .header-container {
@@ -9,10 +9,13 @@
 }
 
 .header-nav {
+  display: none;
   margin-left: 76px;
 }
 
 .header-logo {
+  padding: 16px 0;
+  line-height: 24px;
   color: #2e2f42;
   font-weight: 700;
   text-decoration: none;
@@ -56,6 +59,7 @@
 }
 
 .header-address {
+  display: none;
   flex: 1;
   margin-left: auto;
   font-style: normal;
@@ -76,4 +80,54 @@
 .header-address-link:hover,
 .header-address-link:focus {
   color: #404bbf;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  color: #2e2f42;
+}
+
+@media (min-width: 768px) {
+  .header-logo {
+    padding: 24px 0;
+  }
+  .menu-toggle {
+    display: none;
+  }
+
+  .header-nav,
+  .header-address {
+    display: block;
+  }
+
+  .header-address-list {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+  }
+
+  .header-address-link {
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media (min-width: 1158px) {
+  .header-address-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .header-address-link {
+    padding: 24px 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
 }
