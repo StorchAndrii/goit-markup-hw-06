@@ -1,5 +1,7 @@
-html:has(.mobile-menu.is-open) {
-  overflow: hidden;
+@media (max-width: 767px) {
+  html:has(.mobile-menu.is-open) {
+    overflow: hidden;
+  }
 }
 
 .mobile-menu {
@@ -74,15 +76,18 @@ html:has(.mobile-menu.is-open) {
 }
 
 .mobile-menu-address {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
   font-style: normal;
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.mobile-menu-address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 .mobile-menu-phone {
@@ -116,4 +121,10 @@ html:has(.mobile-menu.is-open) {
 .mobile-menu .mobile-menu-social-link:hover,
 .mobile-menu .mobile-menu-social-link:focus-visible {
   color: #f4f4fd;
+}
+
+@media (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
